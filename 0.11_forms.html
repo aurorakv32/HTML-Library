@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms, Inputs and Text area</title>
+</head>
+<body>
+	<div class="form-one">
+		<form>
+			<p><label>Customer Name: <input /></label></p>
+			<p><label>Street Address: <input /></label></p>
+			<p><label>City: <input /></label></p>
+			<p><label>State: <input /></label></p>
+			<p><label>Telephone Number: <input /></label></p>
+
+		</form>
+	</div>
+	<br />
+	<div class="form-two">
+		<form>
+			<fieldset>
+				<legend>Customer Information</legend>
+				<p><label>Customer Name: <input /></label></p>
+				<p><label>Street Address: <input /></label></p>
+				<p><label>City: <input /></label></p>
+				<p><label>State: <input /></label></p>
+				<p><label>Telephone Number: <input /></label></p>				
+			</fieldset>
+		</form>
+	</div>
+	<br />
+	<div class="form-three">
+		<form>
+			<fieldset>
+				<legend>Sloppiest Sloppy Joe's Ever</legend><!-- radio button only allows user to click 1 choice-->
+				<p><input type="radio" name="Somewhat" id="size1" /><label>Somewhat sloppy</label></p>
+				<p><input type="radio" name="Medium" id="size2" /><label>Medium sloppy</label></p>
+				<p><input type="radio" name="Super" id="size3" /><label>Super sloppy</label></p>
+			</fieldset>
+		</form>
+	</div>
+	<!--build a form that allows a user to select different toppings or ingredients; think checkbox-->
+		<div class="form-four">
+		<form>
+			<fieldset>
+				<legend>Pick some ingredients</legend>
+				<p><input type="checkbox" name="tomato" id="topping1" /><label>Tomato</label></p>
+				<p><input type="checkbox" name="pickles" id="topping2" /><label>Pickles</label></p>
+				<p><input type="checkbox" name="mustard" id="topping3" /><label>Mustard</label></p>
+			</fieldset>
+		</form><!--could have used a <p>, list, or table to do a form-->
+	</div>
+	<div class="form-five">
+		<form>
+			<fieldset>
+				<p><label>Preferred deliver time: <input type="time" min="11:00" max="21:00" step="900"></label></p>
+				<p><label>Delivery Instructions: <textarea></textarea></label></p>
+				<p><button>Submit Order</button></p>
+			</fieldset><!--HTML time is ordered in mins * mins, ie)15(desired minutes)*60(hour))-->
+		</form>
+	</div>
+</body>
+</html>
